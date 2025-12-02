@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 13% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+
+    --primary: 225 73% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 13%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 13% 13%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 225 73% 57%;
+
+    --radius: 0.5rem;
+
+    /* Market colors */
+    --market-yes: 142 71% 45%;
+    --market-yes-bg: 142 71% 95%;
+    --market-no: 0 84% 60%;
+    --market-no-bg: 0 84% 96%;
+    --market-tag: 225 73% 57%;
+    --market-tag-bg: 225 73% 96%;
+
+    /* Parlay panel */
+    --parlay-bg: 220 14% 98%;
+    --parlay-border: 220 13% 90%;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(220 13% 13% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(220 13% 13% / 0.1), 0 2px 4px -2px hsl(220 13% 13% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(220 13% 13% / 0.1), 0 4px 6px -4px hsl(220 13% 13% / 0.1);
+    --shadow-card-hover: 0 8px 25px -5px hsl(220 13% 13% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 13% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 13% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 13% 13%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 225 73% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 213 27% 84%;
+
+    --market-yes: 142 71% 45%;
+    --market-yes-bg: 142 71% 15%;
+    --market-no: 0 84% 60%;
+    --market-no-bg: 0 84% 15%;
+    --market-tag: 225 73% 57%;
+    --market-tag-bg: 225 73% 20%;
+
+    --parlay-bg: 220 13% 12%;
+    --parlay-border: 220 13% 20%;
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.3);
+    --shadow-card-hover: 0 8px 25px -5px hsl(0 0% 0% / 0.4);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
